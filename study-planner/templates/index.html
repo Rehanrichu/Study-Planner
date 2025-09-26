@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>📘 Study Planner</h1>
+    <div class="container">
+        <form action="/add" method="post">
+            <input type="text" name="subject" placeholder="Enter subject" required>
+            <input type="number" name="hours" placeholder="Hours to study" required>
+            <button type="submit">➕ Add Subject</button>
+        </form>
+        <a class="button" href="/plan">📅 View Plan</a>
+    </div>
+</body>
+</html>

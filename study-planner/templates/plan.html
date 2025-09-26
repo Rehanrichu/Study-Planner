@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>📅 Your Study Plan</h1>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Time (%)</th>
+        </tr>
+        {% for subject, percent in plan %}
+        <tr>
+            <td>{{ subject }}</td>
+            <td>{{ percent }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a class="button" href="/">➕ Add More Subjects</a>
+</body>
+</html>
+
